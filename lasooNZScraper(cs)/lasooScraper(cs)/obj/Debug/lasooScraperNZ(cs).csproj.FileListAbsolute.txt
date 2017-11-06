@@ -1,0 +1,11 @@
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\NZ\lasooNZScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraperNZ(cs).exe.config
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\NZ\lasooNZScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraperNZ(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\NZ\lasooNZScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraperNZ(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\NZ\lasooNZScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraperNZ(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\NZ\lasooNZScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraperNZ(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\lasooNZScraper(cs)\lasooNZScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraperNZ(cs).exe.config
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\lasooNZScraper(cs)\lasooNZScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraperNZ(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\lasooNZScraper(cs)\lasooNZScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraperNZ(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\lasooNZScraper(cs)\lasooNZScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraperNZ(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\lasooNZScraper(cs)\lasooNZScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraperNZ(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\lasooNZScraper(cs)\lasooNZScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraperNZ(cs).csprojResolveAssemblyReference.cache

@@ -1,0 +1,10 @@
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraper(cs).exe.config
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraper(cs).exe
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraper(cs).pdb
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraper(cs).exe
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraper(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\NZ\lasooNZScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraperNZ(cs).exe.config
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\NZ\lasooNZScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraperNZ(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\NZ\lasooNZScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraperNZ(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\NZ\lasooNZScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraperNZ(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\NZ\lasooNZScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraperNZ(cs).pdb

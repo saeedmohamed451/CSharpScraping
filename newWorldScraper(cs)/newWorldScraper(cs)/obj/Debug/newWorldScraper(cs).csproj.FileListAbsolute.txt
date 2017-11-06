@@ -1,0 +1,11 @@
+F:\work\C#  sample\shoppingScraper(cs)\newWorldScraper(cs)\newWorldScraper(cs)\bin\Debug\newWorldScraper(cs).exe.config
+F:\work\C#  sample\shoppingScraper(cs)\newWorldScraper(cs)\newWorldScraper(cs)\bin\Debug\newWorldScraper(cs).exe
+F:\work\C#  sample\shoppingScraper(cs)\newWorldScraper(cs)\newWorldScraper(cs)\bin\Debug\newWorldScraper(cs).pdb
+F:\work\C#  sample\shoppingScraper(cs)\newWorldScraper(cs)\newWorldScraper(cs)\obj\Debug\newWorldScraper(cs).exe
+F:\work\C#  sample\shoppingScraper(cs)\newWorldScraper(cs)\newWorldScraper(cs)\obj\Debug\newWorldScraper(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\newWorldScraper(cs)\newWorldScraper(cs)\bin\Debug\newWorldScraper(cs).exe.config
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\newWorldScraper(cs)\newWorldScraper(cs)\obj\Debug\newWorldScraper(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\newWorldScraper(cs)\newWorldScraper(cs)\obj\Debug\newWorldScraper(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\newWorldScraper(cs)\newWorldScraper(cs)\bin\Debug\newWorldScraper(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\newWorldScraper(cs)\newWorldScraper(cs)\bin\Debug\newWorldScraper(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\newWorldScraper(cs)\newWorldScraper(cs)\obj\Debug\newWorldScraper(cs).csprojResolveAssemblyReference.cache

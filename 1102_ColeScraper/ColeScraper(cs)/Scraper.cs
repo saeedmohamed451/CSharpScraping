@@ -305,10 +305,11 @@ namespace ColeScraper_cs_
                                         second_day = "0" + second_day;
                                     }
                                     product_start = first_day + "/" + first_month + "/" + second_year;
-                                    started_date = product_start;
+                                     started_date = product_start;
                                     product_end = second_day + "/" + second_month + "/" + second_year;
                                     ended_date = product_end;
                                     start_Date = second_year + "_" + first_month + "_" + first_day;
+                                    System.Console.WriteLine(start_Date);
                                     string path = file_name.Replace("_YYYY_MM_DD","");
                                     file_name = path;
                                     file_name = file_name.Replace(" ", "");

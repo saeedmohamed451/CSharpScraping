@@ -547,6 +547,7 @@ namespace lasooScraper_cs_
                                                   temp_price = temp_price.Replace("pk", "");
                                                   temp_price = temp_price.Replace("box", "");
                                                   temp_price = temp_price.Replace("punnet", "");
+                                                  temp_price = temp_price.Replace("punet", "");
                                                   if (temp_price.Contains("for"))
                                                   {
                                                       temp_price = Between(temp_price + "xx", "for", "xx");

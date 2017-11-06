@@ -31,6 +31,5 @@ E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\bin\Relea
 E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\bin\Release\HtmlAgilityPack.dll
 E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\bin\Release\Newtonsoft.Json.dll
 E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\bin\Release\WebDriver.dll
-E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).csprojResolveAssemblyReference.cache
 E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).exe
 E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).pdb

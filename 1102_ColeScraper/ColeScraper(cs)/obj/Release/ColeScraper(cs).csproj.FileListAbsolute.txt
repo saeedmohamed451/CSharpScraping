@@ -25,3 +25,6 @@ F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper
 F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\Newtonsoft.Json.dll
 F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\WebDriver.dll
 F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).csprojResolveAssemblyReference.cache
+E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).exe.config
+E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).exe
+E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).pdb

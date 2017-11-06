@@ -57,3 +57,11 @@ F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScr
 C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe.config
 C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
 C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb
+E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe.config
+E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe
+E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).pdb
+E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\HtmlAgilityPack.dll
+E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\Newtonsoft.Json.dll
+E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\WebDriver.dll
+E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
+E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb

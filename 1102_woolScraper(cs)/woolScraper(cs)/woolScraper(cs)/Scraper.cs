@@ -29,9 +29,10 @@ namespace woolScraper_cs_
         List<string> app_list = new List<string>();
         List<string> subsurb_list = new List<string>();
         List<string> name_list = new List<string>();
-        string[] redir_urls = new string[2];
+        List<string> redir_urls = new List<string>(); 
         public string date_end = string.Empty;
         private string date_cur = string.Empty;
+        private List<string> date_curList = new List<string>();
 
         public void initHttpClient()
         {
@@ -98,36 +99,29 @@ namespace woolScraper_cs_
             {
                 redirect_url = stuff.redirect.Value;
                 string saleId = Between(redirect_url, "saleId=", "&areaName");
-                redir_urls[0] = saleId;
-                redir_urls[1] = saleId;
+                redir_urls.Add(saleId);
                 String content = stuff.content.Value;
                 HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
                 doc.LoadHtml(content);
                 IEnumerable<HtmlNode> nodeDiv = doc.DocumentNode.Descendants("div").Where(node => node.Attributes["id"] != null && node.Attributes["id"].Value == "gplus");
                 date_cur = doc.DocumentNode.SelectSingleNode(".//div[@class='sale-dates-cell']").InnerText;
+                date_curList.Add(date_cur);
             }
             else
             {
                 String content = stuff.content.Value;
                 HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
                 doc.LoadHtml(content);
-                IEnumerable<HtmlNode> nodeDiv = doc.DocumentNode.Descendants("div").Where(node => node.Attributes["id"] != null && node.Attributes["id"].Value == "gplus");
-                date_cur = doc.DocumentNode.SelectSingleNode(".//div[@class='sale-dates-cell']").InnerText;
+                IEnumerable<HtmlNode> nodeDiv = doc.DocumentNode.Descendants("td").Where(node => node.Attributes["class"] != null && node.Attributes["class"].Value == "sale-cell");
+
                 if (nodeDiv == null || nodeDiv.LongCount() < 1)
                     return;
 
-                for (int i = 0; i < 2; i++)
+                for (int i = 0; i < nodeDiv.Count(); i++)
                 {
-                    if (i == 0)
-                    {
-                        redir_urls[1] = Between(nodeDiv.ToArray()[i].SelectSingleNode(".//div").Attributes["data-href"].Value + "xx", "http://embed.salefinder.com.au/redirect/sale/", "xx");
-
-                    }
-                    else
-                    {
-                        redir_urls[0] = Between(nodeDiv.ToArray()[i].SelectSingleNode(".//div").Attributes["data-href"].Value + "xx", "http://embed.salefinder.com.au/redirect/sale/", "xx");
-
-                    }
+                    date_cur = nodeDiv.ToArray()[i].SelectSingleNode(".//div[@class='sale-dates-cell']").InnerText;
+                    date_curList.Add(date_cur);
+                    redir_urls.Add(Between(nodeDiv.ToArray()[i].SelectSingleNode(".//div[@class='g-plusone']").Attributes["data-href"].Value + "xx", "http://embed.salefinder.com.au/redirect/sale/", "xx"));
                 }
             }
 
@@ -157,6 +151,11 @@ namespace woolScraper_cs_
                 {
                     numDay = numDay.Remove(1);
                 }
+            }
+            else if (day.Length == 1)
+            {
+                numDay = "0" + day;
+
             }
             else
             {
@@ -205,392 +204,390 @@ namespace woolScraper_cs_
                     url_list.Add(url);
 
                 }
-
-
-
                 for (int j = 0; j < url_list.Count; j++)
                 {
-                    try
+                    if (j == 1)
                     {
-                        if (j == 1)
+                        if (url_list[0] == url_list[1])
                         {
-                            if (url_list[0] == url_list[1])
-                            {
-                                break;
-                            }
+                            break;
                         }
-                        Uri uri = new Uri(url_list[j]);
-                        var result = client.GetAsync(uri).Result;
-                        result.EnsureSuccessStatusCode();
-                        string strContent = result.Content.ReadAsStringAsync().Result;
-                        string json_content = Between(strContent, callback + "(", ")");
-                        if (json_content.Contains("Sorry, catalogue not found"))
+                    }
+                    Uri uri = new Uri(url_list[j]);
+                    var result = client.GetAsync(uri).Result;
+                    result.EnsureSuccessStatusCode();
+                    string strContent = result.Content.ReadAsStringAsync().Result;
+                    string json_content = Between(strContent + "xx", callback + "(", ")xx");
+                    if (json_content.Contains("Sorry, catalogue not found"))
+                    {
+                        continue;
+                    }
+                    dynamic stuff = JsonConvert.DeserializeObject(json_content);
+                    dynamic content = stuff.catalogue;
+                    string pdf_content = stuff.content;
+                    //get pdf url
+                    pdf_content = pdf_content.Replace("\\\"", "\"");
+                    HtmlAgilityPack.HtmlDocument doc1 = new HtmlAgilityPack.HtmlDocument();
+                    doc1.LoadHtml(pdf_content);
+                    HtmlNode pdf_node = doc1.DocumentNode.SelectSingleNode(".//a[@id='sf-catalogue-download']");
+                    if (pdf_node == null)
+                    {
+                        return false;
+                    }
+                    string pdf_url = pdf_node.Attributes["href"].Value;
+                    //
+                    file_path = string.Empty;
+                    page_array.Clear();
+                    str_array.Clear();
+                    for (int i = 0; i < content.Count; i++)
+                    {
+                        foreach (dynamic cat_item in content[i])
                         {
-                            continue;
-                        }
-                        dynamic stuff = JsonConvert.DeserializeObject(json_content);
-                        dynamic content = stuff.catalogue;
-                        string pdf_content = stuff.content;
-                        //get pdf url
-                        pdf_content = pdf_content.Replace("\\\"", "\"");
-                        HtmlAgilityPack.HtmlDocument doc1 = new HtmlAgilityPack.HtmlDocument();
-                        doc1.LoadHtml(pdf_content);
-                        HtmlNode pdf_node = doc1.DocumentNode.SelectSingleNode(".//a[@id='sf-catalogue-download']");
-                        if (pdf_node == null)
-                        {
-                            return false;
-                        }
-                        string pdf_url = pdf_node.Attributes["href"].Value;
-                        //
-                        file_path = string.Empty;
-                        page_array.Clear();
-                        str_array.Clear();
-                        for (int i = 0; i < content.Count; i++)
-                        {
-                            foreach (dynamic cat_item in content[i])
-                            {
 
-                                if (File.Exists(root_dir + "//" + file_path))
+                            if (File.Exists(root_dir + "//" + file_path))
+                            {
+                                using (var stream = new StreamReader(root_dir + "//" + file_path))
                                 {
-                                    using (var stream = new StreamReader(root_dir + "//" + file_path))
+                                    while (!stream.EndOfStream)
                                     {
-                                        while (!stream.EndOfStream)
-                                        {
-                                            var splits = stream.ReadLine().Split(',');
-                                            str_array.Add(splits[3]);
-                                            page_array.Add(splits[4]);
-
-                                        }
+                                        var splits = stream.ReadLine().Split(',');
+                                        str_array.Add(splits[3]);
+                                        page_array.Add(splits[4]);
 
                                     }
 
                                 }
 
-                                dynamic item1 = cat_item.Value;
-                                if (cat_item.Name == "imagefile")
-                                {
-                                    break;
-                                }
-                                else if (cat_item.Name == "firstpage")
-                                {
-                                    break;
-                                }
-                                string item_name = item1.itemName;
+                            }
 
-                                string product_date = string.Empty;
-                                string product_start = string.Empty;
-                                string product_end = string.Empty;
-                                date_cur = date_cur.Replace("Offer valid", "");
-                                string[] str_arr = date_cur.Split('-');
-                                string[] str_start = str_arr[0].Trim().Split(' ');
-                                string[] str_end = str_arr[1].Trim().Split(' ');
-                                string first_month = get_month(str_start[2]);
-                                string first_day = convertDay(str_start[1]);
-                                string second_day = convertDay(str_end[1]);
-                                string second_year = str_end[3];
-                                string second_month = get_month(str_end[2]);
-                                product_start = first_day + "/" + first_month + "/" + second_year;
-                                product_end = second_day + "/" + second_month + "/" + second_year;
-                                started_date = product_start;
-                                ended_date = product_end;
-                                string start_Date = second_year + "_" + first_month + "_" + first_day;
-                                if (item_name == null)
-                                {
-                                    string row = started_date + ',' + ended_date + ',' + retailer + ',' + "" + ',' + (i + 1).ToString() + ',' + "" + ',' + "" + ',' + "0" + ',' + "0";
-                                    writer.WriteRow(row);
-                                    break;
-                                }
+                            dynamic item1 = cat_item.Value;
+                            if (cat_item.Name == "imagefile")
+                            {
+                                break;
+                            }
+                            else if (cat_item.Name == "firstpage")
+                            {
+                                break;
+                            }
+                            string item_name = item1.itemName;
+                            string product_date = string.Empty;
+                            string product_start = string.Empty;
+                            string product_end = string.Empty;
+                            string date_cur1 = date_curList[j].Replace("Offer valid", "");
+                            string[] str_arr = date_cur1.Split('-');
+                            string[] str_start = str_arr[0].Trim().Split(' ');
+                            string[] str_end = str_arr[1].Trim().Split(' ');
+                            string first_month = get_month(str_start[2]);
+                            string first_day = convertDay(str_start[1]);
+                            string second_day = convertDay(str_end[1]);
+                            string second_year = str_end[3];
+                            string second_month = get_month(str_end[2]);
+                            product_start = first_day + "/" + first_month + "/" + second_year;
+                            product_end = second_day + "/" + second_month + "/" + second_year;
+                            started_date = product_start;
+                            ended_date = product_end;
+                            string start_Date = second_year + "_" + first_month + "_" + first_day;
+                            if (item_name == null)
+                            {
+                                string row = started_date + ',' + ended_date + ',' + retailer + ',' + "" + ',' + (i + 1).ToString() + ',' + "" + ',' + "" + ',' + "0" + ',' + "0";
+                                writer.WriteRow(row);
+                                break;
+                            }
 
-                                string item_id = item1.itemId;
-                                string page = string.Empty;
+                            string item_id = item1.itemId;
+                            string page = string.Empty;
+                            if (j == 0)
+                            {
+                                page = (i + 1).ToString();
+
+                            }
+                            else
+                            {
+                                page = (i + 1).ToString();
+                            }
+                            string itemUrl = "https://embed.salefinder.com.au/item/tooltip/" + item_id + "?callback=" + callback + "&preview=&saleGroup=0&maxWidth=450&maxHeight=460&_=" + timestamp1;
+                            var item_content = client.GetAsync(new Uri(itemUrl)).Result;
+                            result.EnsureSuccessStatusCode();
+                            string item_result = item_content.Content.ReadAsStringAsync().Result;
+                            item_result = item_result.Replace("\\\"", "");
+                            item_result = item_result.Replace("\\/", "/");
+                            item_result = item_result.Replace("\\n", string.Empty);
+                            item_result = item_result.Replace("\\t", string.Empty);
+                            item_result = item_result.Replace("\\r", string.Empty);
+                            item_result = Between(item_result + ")", callback + "(", "))");
+                            HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
+                            doc.LoadHtml(item_result);
+                            IEnumerable<HtmlNode> nodeDiv = doc.DocumentNode.Descendants("div").Where(node => node.Attributes["id"] != null && node.Attributes["id"].Value == "sf-item-tooltip");
+                            if (nodeDiv == null || nodeDiv.LongCount() < 1)
+                                return false;
+
+                            HtmlNode nodeImg = nodeDiv.ToArray()[0].SelectSingleNode(".//a[@id='sf-item-tooltip-image']");
+                            string product_des = string.Empty;
+                            string product_disprice = string.Empty;
+                            string product_regpirce = string.Empty;
+                            string promo_type = string.Empty;
+                            string image_url = string.Empty;
+                            string multibuy_Qty = string.Empty;
+                            float qty = 0;
+                            item_name = HttpUtility.HtmlDecode(item_name);
+                            item_name = filterDescription(item_name);
+                            item_name = item_name.Trim();
+                            product_des = item_name;
+                            if (product_des.Contains("NEW"))
+                            {
+                                product_des = product_des.Replace("NEW", "").TrimStart();
+                                promo_type = "New Line";
+                            }
+                            image_url = nodeImg.SelectSingleNode(".//img").Attributes["src"].Value;
+                            image_url = image_url.Replace("thumbs/ipad", "products");
+
+                            //get product informations
+                            HtmlNode nodeDes = nodeDiv.ToArray()[0].SelectSingleNode(".//div[@id='sf-item-tooltip-details-container']");
+                            if (nodeDes != null)
+                            {
+
                                 if (j == 0)
                                 {
-                                    page = (i + 1).ToString();
+                                    string path = file_name.Replace("_YYYY_MM_DD", "");
+                                    file_name = path;
+                                    file_name = file_name.Replace(" ", "");
+                                    file_path = file_name + "_" + start_Date + ".csv";
+                                    createDrectory(root_dir + "\\" + file_name + "_" + start_Date);
+                                    downloadFile(root_dir + "\\" + file_name + "_" + start_Date, product_des, image_url);
+                                    writer = new FileWriter(root_dir + "//" + file_path);
+                                    writer.WriteData(first_row, root_dir + "//" + file_path);
+                                    downloadPdf(pdf_url, root_dir + "//" + file_name + "_" + start_Date + ".pdf");
+
+                                }
+                                else if (date_curList[j] == date_curList[j - 1])
+                                {
+                                    string path = file_name.Replace("_YYYY_MM_DD", "");
+                                    file_name = path;
+                                    file_name = file_name.Replace(" ", "");
+                                    createDrectory(root_dir + "\\" + file_name + "_" + start_Date + "-1");
+                                    downloadFile(root_dir + "\\" + file_name + "_" + start_Date + "-1", product_des, image_url);
+                                    file_path = file_name + "_" + start_Date + "-1" + ".csv";
+                                    file_path = file_path.Trim();
+                                    str_path = file_path;
+                                    writer = new FileWriter(root_dir + "//" + file_path);
+                                    writer.WriteData(first_row, root_dir + "//" + file_path);
+                                    downloadPdf(pdf_url, root_dir + "//" + file_name + "_" + start_Date + "-1" + ".pdf");
 
                                 }
                                 else
                                 {
-                                    page = (i + 1).ToString();
+                                    string path = file_name.Replace("_YYYY_MM_DD", "");
+                                    file_name = path;
+                                    file_name = file_name.Replace(" ", "");
+                                    file_path = file_name + "_" + start_Date + ".csv";
+                                    createDrectory(root_dir + "\\" + file_name + "_" + start_Date);
+                                    downloadFile(root_dir + "\\" + file_name + "_" + start_Date, product_des, image_url);
+                                    writer = new FileWriter(root_dir + "//" + file_path);
+                                    writer.WriteData(first_row, root_dir + "//" + file_path);
+                                    downloadPdf(pdf_url, root_dir + "//" + file_name + "_" + start_Date + ".pdf");
+
                                 }
-                                string itemUrl = "https://embed.salefinder.com.au/item/tooltip/" + item_id + "?callback=" + callback + "&preview=&saleGroup=0&maxWidth=450&maxHeight=460&_=" + timestamp1;
-                                var item_content = client.GetAsync(new Uri(itemUrl)).Result;
-                                result.EnsureSuccessStatusCode();
-                                string item_result = item_content.Content.ReadAsStringAsync().Result;
-                                item_result = item_result.Replace("\\\"", "");
-                                item_result = item_result.Replace("\\/", "/");
-                                item_result = item_result.Replace("\\n", string.Empty);
-                                item_result = item_result.Replace("\\t", string.Empty);
-                                item_result = item_result.Replace("\\r", string.Empty);
-                                item_result = Between(item_result + ")", callback + "(", "))");
-                                HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
-                                doc.LoadHtml(item_result);
-                                IEnumerable<HtmlNode> nodeDiv = doc.DocumentNode.Descendants("div").Where(node => node.Attributes["id"] != null && node.Attributes["id"].Value == "sf-item-tooltip");
-                                if (nodeDiv == null || nodeDiv.LongCount() < 1)
-                                    return false;
 
-                                HtmlNode nodeImg = nodeDiv.ToArray()[0].SelectSingleNode(".//a[@id='sf-item-tooltip-image']");
-                                string product_des = string.Empty;
-                                string product_disprice = string.Empty;
-                                string product_regpirce = string.Empty;
-                                string promo_type = string.Empty;
-                                string image_url = string.Empty;
-                                string multibuy_Qty = string.Empty;
-                                float qty = 0;
-                                item_name = HttpUtility.HtmlDecode(item_name);
-                                item_name = filterDescription(item_name);
-                                item_name = item_name.Trim();
-                                product_des = item_name;
-                                ppname = product_des;
 
-                                if (product_des.Contains("NEW"))
+                                if (nodeDes.SelectSingleNode(".//span[@class='sf-pricedisplay']") != null)
                                 {
-                                    product_des = product_des.Replace("NEW", "").TrimStart();
-                                    promo_type = "New Line";
+                                    product_disprice = nodeDes.SelectSingleNode(".//span[@class='sf-pricedisplay']").InnerText;
+                                    product_disprice = product_disprice.Replace("$", "");
                                 }
-                                image_url = nodeImg.SelectSingleNode(".//img").Attributes["src"].Value;
-                                image_url = image_url.Replace("thumbs/ipad", "products");
+                                if (nodeDes.SelectSingleNode(".//span[@class='sf-regprice']") != null)
+                                {
+                                    product_regpirce = nodeDes.SelectSingleNode(".//span[@class='sf-regprice']").InnerText;
+                                    product_regpirce = product_regpirce.Replace("$", "");
 
-                                //get product informations
-                                HtmlNode nodeDes = nodeDiv.ToArray()[0].SelectSingleNode(".//div[@id='sf-item-tooltip-details-container']");
-                                if (nodeDes != null)
+                                }
+
+                                string multi = string.Empty;
+                                if (nodeDes.SelectSingleNode(".//span[@class='sf-nowprice']") == null)
                                 {
 
-                                    if (j == 0)
+                                }
+                                else
+                                {
+
+                                    multi = nodeDes.SelectSingleNode(".//span[@class='sf-nowprice']").InnerText;
+
+                                }
+                                if (multi.Contains("Any") && multi.Contains("for"))
+                                {
+                                    multibuy_Qty = Between(multi, "Any", "for").Trim();
+                                    qty = float.Parse(multibuy_Qty);
+                                    // product_disprice = Between("/" + product_disprice, "/", ".");
+                                    product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
+                                    product_regpirce = (float.Parse(product_regpirce) / qty).ToString("N2");
+                                }
+                                else if (multi.Contains("Both for"))
+                                {
+
+                                }
+                                else if (multi.Contains("All") && multi.Contains("for"))
+                                {
+                                    multibuy_Qty = Between(multi, "All", "for").Trim();
+                                    qty = float.Parse(multibuy_Qty);
+                                    // product_disprice = Between("/" + product_disprice, "/", ".");
+                                    product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
+                                    product_regpirce = (float.Parse(product_regpirce) / qty).ToString("N2");
+
+                                }
+                                else if (multi.Contains("for"))
+                                {
+                                    multibuy_Qty = Between("Any" + multi, "Any", "for").Trim();
+                                    qty = float.Parse(multibuy_Qty);
+                                    //product_disprice = Between("/" + product_disprice, "/", ".");
+                                    if ((float.Parse(product_disprice) / qty).ToString("N2") == "0.50")
                                     {
-                                        string path = file_name.Replace("_YYYY_MM_DD", "");
-                                        file_name = path;
-                                        file_name = file_name.Replace(" ", "");
-                                        file_path = file_name + "_" + start_Date + ".csv";
-                                        createDrectory(root_dir + "\\" + file_name + "_" + start_Date);
-                                        downloadFile(root_dir + "\\" + file_name + "_" + start_Date, product_des, image_url);
-                                        writer = new FileWriter(root_dir + "//" + file_path);
-                                        writer.WriteData(first_row, root_dir + "//" + file_path);
-                                        downloadPdf(pdf_url, root_dir + "//" + file_name + "_" + start_Date + ".pdf");
-
-                                    }
-                                    else if (j == 1)
-                                    {
-                                        string path = file_name.Replace("_YYYY_MM_DD", "");
-                                        file_name = path;
-                                        createDrectory(root_dir + "\\" + file_name + "_" + start_Date);
-                                        downloadFile(root_dir + "\\" + file_name + "_" + start_Date, product_des, image_url);
-                                        file_path = file_name + "_" + start_Date + ".csv";
-                                        file_path = file_path.Trim();
-                                        str_path = file_path;
-                                        writer = new FileWriter(root_dir + "//" + file_path);
-                                        writer.WriteData(first_row, root_dir + "//" + file_path);
-                                        downloadPdf(pdf_url, root_dir + "//" + file_name + "_" + start_Date + ".pdf");
-
-                                    }
-
-
-                                    if (nodeDes.SelectSingleNode(".//span[@class='sf-pricedisplay']") != null)
-                                    {
-                                        product_disprice = nodeDes.SelectSingleNode(".//span[@class='sf-pricedisplay']").InnerText;
-                                        product_disprice = product_disprice.Replace("$", "");
-                                    }
-                                    if (nodeDes.SelectSingleNode(".//span[@class='sf-regprice']") != null)
-                                    {
-                                        product_regpirce = nodeDes.SelectSingleNode(".//span[@class='sf-regprice']").InnerText;
-                                        product_regpirce = product_regpirce.Replace("$", "");
-
-                                    }
-
-                                    string multi = string.Empty;
-                                    if (nodeDes.SelectSingleNode(".//span[@class='sf-nowprice']") == null)
-                                    {
+                                        product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
+                                        product_regpirce = "0";
 
                                     }
                                     else
                                     {
-
-                                        multi = nodeDes.SelectSingleNode(".//span[@class='sf-nowprice']").InnerText;
-
-                                    }
-                                    if (multi.Contains("Any") && multi.Contains("for"))
-                                    {
-                                        multibuy_Qty = Between(multi, "Any", "for").Trim();
-                                        qty = float.Parse(multibuy_Qty);
-                                        // product_disprice = Between("/" + product_disprice, "/", ".");
-                                        product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
-                                        product_regpirce = (float.Parse(product_regpirce) / qty).ToString("N2");
-                                    }
-                                    else if (multi.Contains("Both for"))
-                                    {
-                                        qty = 2;
-                                        // product_disprice = Between("/" + product_disprice, "/", ".");
-                                        product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
-                                        product_regpirce = (float.Parse(product_regpirce) / qty).ToString("N2");
-                                    }
-                                    else if (multi.Contains("both for"))
-                                    {
-                                        qty = 2;
-                                        // product_disprice = Between("/" + product_disprice, "/", ".");
                                         product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
                                         product_regpirce = (float.Parse(product_regpirce) / qty).ToString("N2");
 
                                     }
-                                    else if (multi.Contains("three for"))
-                                    {
 
-                                        qty = 3;
-                                        // product_disprice = Between("/" + product_disprice, "/", ".");
-                                        product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
-                                        product_regpirce = (float.Parse(product_regpirce) / qty).ToString("N2");
+                                }
+
+                                else if (multi.Contains("each"))
+                                {
+
+                                }
+                                float dis_price = 0;
+                                float reg_price = 0;
+
+                                if (product_regpirce == string.Empty)
+                                {
+                                    reg_price = 0;
+                                }
+                                else
+                                {
+                                    reg_price = float.Parse(product_regpirce);
+
+                                }
+                                if (product_disprice == string.Empty)
+                                {
+                                    dis_price = 0;
+                                }
+                                else
+                                {
+                                    dis_price = float.Parse(product_disprice);
+
+                                }
+                                if (nodeDes.SelectSingleNode(".//span[@class='sf-regoption']") != null)
+                                {
+                                    if (nodeDes.SelectSingleNode(".//span[@class='sf-regoption']").InnerText.Contains("Was"))
+                                    {
+                                        reg_price = reg_price - dis_price;
+                                        product_regpirce = reg_price.ToString("N2");
+                                    }
+                                    else if (nodeDes.SelectSingleNode(".//span[@class='sf-regoption']").InnerText.Contains("Introductory price"))
+                                    {
+                                        product_regpirce = "0";
+                                    }
+                                }
+
+                                if (qty > 1)
+                                {
+                                    promo_type = "Multibuy";
+                                }
+                                else if (reg_price >= dis_price)
+                                {
+                                    if (promo_type != "New Line")
+                                    {
+                                        promo_type = "Half Price";
 
                                     }
-                                    else if (multi.Contains("All") && multi.Contains("for"))
-                                    {
-                                        multibuy_Qty = Between(multi, "All", "for").Trim();
-                                        qty = float.Parse(multibuy_Qty);
-                                        // product_disprice = Between("/" + product_disprice, "/", ".");
-                                        product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
-                                        product_regpirce = (float.Parse(product_regpirce) / qty).ToString("N2");
 
+                                }
+                                else
+                                {
+                                    if (promo_type != "New Line")
+                                    {
+                                        promo_type = "Price Reduction";
                                     }
-                                    else if (multi.Contains("for"))
+                                }
+                                if (j == 1)
+                                {
+                                    string row = started_date + ',' + ended_date + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;
+                                    if (str_array.Count == 1)
                                     {
-                                        multibuy_Qty = Between("Any" + multi, "Any", "for").Trim();
-                                        qty = float.Parse(multibuy_Qty);
-                                        //product_disprice = Between("/" + product_disprice, "/", ".");
-                                        if ((float.Parse(product_disprice) / qty).ToString("N2") == "0.50")
-                                        {
-                                            product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
-                                            product_regpirce = "0";
-
-                                        }
-                                        else
-                                        {
-                                            product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
-                                            product_regpirce = (float.Parse(product_regpirce) / qty).ToString("N2");
-
-                                        }
-
-                                    }
-
-                                    else if (multi.Contains("each"))
-                                    {
-
-                                    }
-                                    float dis_price = 0;
-                                    float reg_price = 0;
-
-                                    if (product_regpirce == string.Empty)
-                                    {
-                                        reg_price = 0;
-                                    }
-                                    else
-                                    {
-                                        reg_price = float.Parse(product_regpirce);
-
-                                    }
-                                    if (product_disprice == string.Empty)
-                                    {
-                                        dis_price = 0;
-                                    }
-                                    else
-                                    {
-                                        dis_price = float.Parse(product_disprice);
-
-                                    }
-                                    if (nodeDes.SelectSingleNode(".//span[@class='sf-regoption']") != null)
-                                    {
-                                        if (nodeDes.SelectSingleNode(".//span[@class='sf-regoption']").InnerText.Contains("Was"))
-                                        {
-                                            reg_price = reg_price - dis_price;
-                                            product_regpirce = reg_price.ToString("N2");
-                                        }
-                                        else if (nodeDes.SelectSingleNode(".//span[@class='sf-regoption']").InnerText.Contains("Introductory price"))
-                                        {
-                                            product_regpirce = "0";
-                                        }
-                                    }
-
-                                    if (qty > 1)
-                                    {
-                                        promo_type = "Multibuy";
-                                    }
-                                    else if (reg_price >= dis_price)
-                                    {
-                                        if (promo_type != "New Line")
-                                        {
-                                            promo_type = "Half Price";
-
-                                        }
+                                        writer.WriteRow(row);
 
                                     }
                                     else
                                     {
-                                        if (promo_type != "New Line")
-                                        {
-                                            promo_type = "Price Reduction";
-                                        }
-                                    }
-                                    if (j == 1)
-                                    {
-                                        string row = started_date + ',' + ended_date + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;
-                                        if (str_array.Count == 1)
+                                        if (!str_array.Contains(product_des))
                                         {
                                             writer.WriteRow(row);
-
                                         }
                                         else
                                         {
-                                            if (!str_array.Contains(product_des))
+                                            int key = str_array.IndexOf(product_des);
+                                            if (page_array[key] == page)
                                             {
-                                                writer.WriteRow(row);
-                                            }
 
-                                        }
-
-                                    }
-                                    else
-                                    {
-                                        string row = product_start + ',' + product_end + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;
-                                        if (str_array.Count == 1)
-                                        {
-                                            writer.WriteRow(row);
-
-                                        }
-                                        else
-                                        {
-                                            if (!str_array.Contains(product_des))
-                                            {
-                                                writer.WriteRow(row);
                                             }
                                             else
                                             {
-                                                int key = str_array.IndexOf(product_des);
-                                                if (page_array[key] == page)
-                                                {
-
-                                                }
-                                                else
-                                                {
-                                                    writer.WriteRow(row);
-                                                }
-
+                                                writer.WriteRow(row);
                                             }
 
                                         }
+
                                     }
 
                                 }
+                                else
+                                {
+                                    string row = product_start + ',' + product_end + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;
+                                    if (str_array.Count == 1)
+                                    {
+                                        writer.WriteRow(row);
+
+                                    }
+                                    else
+                                    {
+                                        if (!str_array.Contains(product_des))
+                                        {
+                                            writer.WriteRow(row);
+                                        }
+                                        else
+                                        {
+                                            int key = str_array.IndexOf(product_des);
+                                            if (page_array[key] == page)
+                                            {
+
+                                            }
+                                            else
+                                            {
+                                                writer.WriteRow(row);
+                                            }
+
+                                        }
+
+                                    }
+                                }
+
+
+
 
                             }
 
-
                         }
-                    }
-                    catch (Exception e)
-                    {
-                        writer1.WriteRow(ppname);
-                        continue;
+
 
                     }
 
+                }          
 
-                }
+
+
+              
             }
             catch (Exception ex)
             {

@@ -536,6 +536,7 @@ namespace lasooScraper_cs_
                                         product_regpirce = product_regpirce.Replace("Save UP TO $", "");
                                         product_regpirce = product_regpirce.Replace("SAVE UP TO $", "");
                                         product_regpirce = product_regpirce.Replace("Save Up To $", "");
+                                        product_regpirce = product_regpirce.Replace("Save up to", "");
                                         product_regpirce = product_regpirce.Replace("See In-Store", "");
                                         product_regpirce = product_regpirce.Replace("Save 50%", "");
                                         product_regpirce = product_regpirce.Replace("ea", "");

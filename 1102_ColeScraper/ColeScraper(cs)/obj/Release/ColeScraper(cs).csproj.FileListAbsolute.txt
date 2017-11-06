@@ -1,0 +1,27 @@
+F:\work\C#  sample\ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).exe.config
+F:\work\C#  sample\ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).exe
+F:\work\C#  sample\ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).pdb
+F:\work\C#  sample\ColeScraper\ColeScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\ColeScraper\ColeScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\ColeScraper\ColeScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).exe
+F:\work\C#  sample\ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).pdb
+F:\work\C#  sample\shoppingScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).exe.config
+F:\work\C#  sample\shoppingScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).exe
+F:\work\C#  sample\shoppingScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).pdb
+F:\work\C#  sample\shoppingScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shoppingScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shoppingScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shoppingScraper(cs)\ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shoppingScraper(cs)\ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).exe
+F:\work\C#  sample\shoppingScraper(cs)\ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).exe.config
+F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shopping Scraper\Cole\ColeScraper(cs)\ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).csprojResolveAssemblyReference.cache

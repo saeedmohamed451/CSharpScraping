@@ -1,0 +1,59 @@
+F:\work\C#  sample\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe.config
+F:\work\C#  sample\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe
+F:\work\C#  sample\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).pdb
+F:\work\C#  sample\woolScraper(cs)\woolScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\woolScraper(cs)\woolScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\woolScraper(cs)\woolScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
+F:\work\C#  sample\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb
+F:\work\C#  sample\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shoppingScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe.config
+F:\work\C#  sample\shoppingScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe
+F:\work\C#  sample\shoppingScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).pdb
+F:\work\C#  sample\shoppingScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shoppingScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shoppingScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shoppingScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shoppingScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
+F:\work\C#  sample\shoppingScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe.config
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe.config
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe.config
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe.config
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe.config
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\wool\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\woolScraper(cs).exe.config
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb

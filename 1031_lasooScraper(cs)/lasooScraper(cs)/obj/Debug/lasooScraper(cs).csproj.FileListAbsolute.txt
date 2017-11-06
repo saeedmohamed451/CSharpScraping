@@ -1,0 +1,11 @@
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraper(cs).exe.config
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraper(cs).exe
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraper(cs).pdb
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraper(cs).exe
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraper(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraper(cs)AU.exe.config
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraper(cs)AU.exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\bin\Debug\lasooScraper(cs)AU.pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraper(cs).csprojResolveAssemblyReference.cache
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraper(cs)AU.exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\obj\Debug\lasooScraper(cs)AU.pdb

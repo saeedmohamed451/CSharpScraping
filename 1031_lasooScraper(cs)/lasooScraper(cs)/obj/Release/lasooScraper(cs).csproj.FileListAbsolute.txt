@@ -1,0 +1,30 @@
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs).exe.config
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs).exe
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs).pdb
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).exe
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).pdb
+F:\work\C#  sample\lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shoppingScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs).exe.config
+F:\work\C#  sample\shoppingScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs).exe
+F:\work\C#  sample\shoppingScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs).pdb
+F:\work\C#  sample\shoppingScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shoppingScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shoppingScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shoppingScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).exe
+F:\work\C#  sample\shoppingScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\lasoo\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs).exe.config
+F:\work\C#  sample\shopping Scraper\lasoo\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\lasoo\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\lasoo\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs).exe
+F:\work\C#  sample\shopping Scraper\lasoo\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs).pdb
+F:\work\C#  sample\shopping Scraper\lasoo\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shopping Scraper\lasoo\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shopping Scraper\lasoo\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shopping Scraper\lasoo\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).csprojResolveAssemblyReference.cache
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs).exe.config
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs)AU.exe.config

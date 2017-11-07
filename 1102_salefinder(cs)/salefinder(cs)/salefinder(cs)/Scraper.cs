@@ -192,7 +192,6 @@ namespace salefinder_cs_
                     get_storeId(postcode, storeUrl);
                     get_url(storeUrl);
                     List<string> preDate = new List<string>();
-
                     for (int j = 0; j < mainUrl_list.Count; j++)
                     {
                         string product_date = string.Empty;
@@ -223,15 +222,15 @@ namespace salefinder_cs_
                         string first_day = str_start[1];
                         string second_day = str_end[1];
                         string second_year = str_end[3];
-                        string second_month = get_month(str_end[2]);
-                        if (first_day.Length == 1) 
+                        if (first_day.Length == 1)
                         {
                             first_day = "0" + first_day;
                         }
-                        if (second_day.Length == 1) 
+                        if (second_day.Length == 1)
                         {
                             second_day = "0" + second_day;
                         }
+                        string second_month = get_month(str_end[2]);
                         product_start = first_day + "/" + first_month + "/" + second_year;
                         product_end = second_day + "/" + second_month + "/" + second_year;
                         start_Date = second_year + "_" + first_month + "_" + first_day;
@@ -295,8 +294,8 @@ namespace salefinder_cs_
                                 {
                                     pdfimage = cat_item.Value.Value;
                                     url1 = "https://d2g5na3xotdfpc.cloudfront.net/images/salepages/ipad/" + pdfimage;
-                                    string path = file_name.Replace("_YYYY_MM_DD","");
-                                    file_name = path;
+
+                                    file_name = file_name.Replace("_YYYY_MM_DD", "");
                                     file_name = file_name.Replace(" ", "");
                                     string pdfdir = string.Empty;
                                     if (j == 0)
@@ -392,8 +391,7 @@ namespace salefinder_cs_
                                 {
                                     if (j == 0)
                                     {
-                                        string[] arr = file_name.Split('_');
-                                        file_name = arr[0];
+                                        file_name = file_name.Replace("_YYYY_MM_DD", "");
                                         file_name = file_name.Replace(" ", "");
                                         file_path = file_name + "_" + start_Date + ".csv";
                                         createDrectory(root_dir + "\\" + file_name + "_" + start_Date);
@@ -406,12 +404,11 @@ namespace salefinder_cs_
                                     {
                                         if (preDate[j] == preDate[j - 1])
                                         {
-                                            string[] arr = file_name.Split('_');
-                                            file_name = arr[0];
+                                            file_name = file_name.Replace("_YYYY_MM_DD", "");
                                             file_name = file_name.Replace(" ", "");
-                                            file_path = file_name + "_" + start_Date + "-" + "-1" + ".csv";
-                                            createDrectory(root_dir + "\\" + file_name + "_" + start_Date + "-" + "-1");
-                                            downloadFile(root_dir + "\\" + file_name + "_" + start_Date + "-" + "-1", product_des, image_url);
+                                            file_path = file_name + "_" + start_Date + "-" + "1" + ".csv";
+                                            createDrectory(root_dir + "\\" + file_name + "_" + start_Date + "-" + "1");
+                                            downloadFile(root_dir + "\\" + file_name + "_" + start_Date + "-" + "1", product_des, image_url);
                                             writer = new FileWriter(root_dir + "//" + file_path);
                                             writer.WriteData(first_row, root_dir + "//" + file_path);
 
@@ -419,8 +416,7 @@ namespace salefinder_cs_
                                         }
                                         else
                                         {
-                                            string[] arr = file_name.Split('_');
-                                            file_name = arr[0];
+                                            file_name = file_name.Replace("_YYYY_MM_DD", "");
                                             file_name = file_name.Replace(" ", "");
                                             file_path = file_name + "_" + start_Date + ".csv";
                                             createDrectory(root_dir + "\\" + file_name + "_" + start_Date);
@@ -431,8 +427,8 @@ namespace salefinder_cs_
 
                                         }
 
-                                    }
 
+                                    }
 
                                     //downloadPdf(pdf_url, root_dir + "//" + file_name + "_" + start_Date + ".pdf");
 
@@ -479,6 +475,14 @@ namespace salefinder_cs_
                                     if (multi.Contains("Any") && multi.Contains("for"))
                                     {
                                         multibuy_Qty = Between(multi, "Any", "for").Trim();
+                                        qty = float.Parse(multibuy_Qty);
+                                        // product_disprice = Between("/" + product_disprice, "/", ".");
+                                        product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
+                                        product_regpirce = (float.Parse(product_regpirce) / qty).ToString("N2");
+                                    }
+                                    else if (multi.Contains("Buy") && multi.Contains("for"))
+                                    {
+                                        multibuy_Qty = Between(multi, "Buy", "for").Trim();
                                         qty = float.Parse(multibuy_Qty);
                                         // product_disprice = Between("/" + product_disprice, "/", ".");
                                         product_disprice = (float.Parse(product_disprice) / qty).ToString("N2");
@@ -593,43 +597,45 @@ namespace salefinder_cs_
                                           }
 
                                       }else*/
-                                    if (product_disprice == "") 
+                                    if (product_disprice == "")
                                     {
                                         product_disprice = "0";
                                     }
-                                    if(product_regpirce == "")
+                                    if (product_regpirce == "")
                                     {
                                         product_regpirce = "0";
                                     }
-                                        string row = product_start + ',' + product_end + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;
-                                        if (str_array.Count == 1)
+
+                                    string row = product_start + ',' + product_end + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;
+                                    if (str_array.Count == 1)
+                                    {
+                                        writer.WriteRow(row);
+
+                                    }
+                                    else
+                                    {
+                                        if (!str_array.Contains(product_des))
                                         {
                                             writer.WriteRow(row);
-
                                         }
                                         else
                                         {
-                                            if (!str_array.Contains(product_des))
+                                            int key = str_array.IndexOf(product_des);
+                                            if (page_array[key] == page)
                                             {
-                                                writer.WriteRow(row);
+
                                             }
                                             else
                                             {
-                                                int key = str_array.IndexOf(product_des);
-                                                if (page_array[key] == page)
-                                                {
-
-                                                }
-                                                else
-                                                {
-                                                    writer.WriteRow(row);
-                                                }
-
+                                                writer.WriteRow(row);
                                             }
 
                                         }
 
                                     }
+
+                                }
+
 
                             }
 

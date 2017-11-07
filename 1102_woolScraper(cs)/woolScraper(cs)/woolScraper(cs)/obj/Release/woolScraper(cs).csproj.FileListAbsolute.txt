@@ -63,5 +63,6 @@ E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolS
 E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\HtmlAgilityPack.dll
 E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\Newtonsoft.Json.dll
 E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\bin\Release\WebDriver.dll
+E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).csprojResolveAssemblyReference.cache
 E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).exe
 E:\_GIT\CSharpScraping\CSharpScraping\1102_woolScraper(cs)\woolScraper(cs)\woolScraper(cs)\obj\Release\woolScraper(cs).pdb

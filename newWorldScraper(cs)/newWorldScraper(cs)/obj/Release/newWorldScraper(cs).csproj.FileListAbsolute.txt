@@ -1,0 +1,6 @@
+E:\_GIT\CSharpScraping\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\bin\Release\newWorldScraper(cs).exe.config
+E:\_GIT\CSharpScraping\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\bin\Release\newWorldScraper(cs).exe
+E:\_GIT\CSharpScraping\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\bin\Release\newWorldScraper(cs).pdb
+E:\_GIT\CSharpScraping\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\obj\Release\newWorldScraper(cs).csprojResolveAssemblyReference.cache
+E:\_GIT\CSharpScraping\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\obj\Release\newWorldScraper(cs).exe
+E:\_GIT\CSharpScraping\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\obj\Release\newWorldScraper(cs).pdb

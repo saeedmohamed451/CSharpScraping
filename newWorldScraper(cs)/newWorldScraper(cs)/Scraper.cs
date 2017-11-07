@@ -734,13 +734,15 @@ namespace newWorldScraper_cs_
 
 
                                 }
-                                if (product_disprice == "" && product_regpirce == "")
+                                if (product_disprice == "") 
                                 {
-                                    log("120");
-                                    continue;
+                                    product_disprice = "0";
                                 }
-                                else
+                                if (product_regpirce == "") 
                                 {
+                                    product_regpirce = "0";
+                                }
+                             
                                     string row = product_start + ',' + product_end + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_regpirce + ',' + product_disprice;
                                     log("121");
                                     if (str_array.Count == 1)
@@ -775,8 +777,6 @@ namespace newWorldScraper_cs_
                                     }
 
                                 }
-
-                            }
 
                         }
                         catch (Exception ex1)

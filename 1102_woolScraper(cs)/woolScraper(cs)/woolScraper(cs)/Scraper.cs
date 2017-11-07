@@ -511,6 +511,14 @@ namespace woolScraper_cs_
                                         promo_type = "Price Reduction";
                                     }
                                 }
+                                if(product_disprice == "")
+                                {
+                                    product_disprice = "0";
+                                }
+                                if (product_regpirce == "") 
+                                {
+                                    product_regpirce = "0";
+                                }
                                 if (j == 1)
                                 {
                                     string row = started_date + ',' + ended_date + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;

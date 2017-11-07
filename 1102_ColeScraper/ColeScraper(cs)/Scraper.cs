@@ -468,6 +468,14 @@ namespace ColeScraper_cs_
 
                                         }
                                     }
+                                    if (product_disprice == "") 
+                                    {
+                                        product_disprice = "0";
+                                    }
+                                    if (product_regpirce == "") 
+                                    {
+                                        product_regpirce = "0";
+                                    }
 
                                     string row = product_start + ',' + product_end + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;
                                     if (str_array.Count == 1)

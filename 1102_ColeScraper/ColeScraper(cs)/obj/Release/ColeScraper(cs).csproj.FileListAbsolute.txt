@@ -34,3 +34,6 @@ E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\bin\Relea
 E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).exe
 E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).pdb
 E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).csprojResolveAssemblyReference.cache
+E:\_GIT\CSharpScraping\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).exe.config
+E:\_GIT\CSharpScraping\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).exe
+E:\_GIT\CSharpScraping\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).pdb

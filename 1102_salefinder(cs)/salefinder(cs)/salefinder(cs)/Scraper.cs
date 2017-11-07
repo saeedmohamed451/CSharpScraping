@@ -593,12 +593,14 @@ namespace salefinder_cs_
                                           }
 
                                       }else*/
-                                    if (product_disprice == "" && product_regpirce == "")
+                                    if (product_disprice == "") 
                                     {
-                                        continue;
+                                        product_disprice = "0";
                                     }
-                                    else
+                                    if(product_regpirce == "")
                                     {
+                                        product_regpirce = "0";
+                                    }
                                         string row = product_start + ',' + product_end + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;
                                         if (str_array.Count == 1)
                                         {
@@ -628,10 +630,6 @@ namespace salefinder_cs_
                                         }
 
                                     }
-
-
-                                }
-
 
                             }
 

@@ -1,0 +1,11 @@
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Debug\salefinder(cs).exe.config
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Debug\salefinder(cs).exe
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Debug\salefinder(cs).pdb
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\obj\Debug\salefinder(cs).exe
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\obj\Debug\salefinder(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Debug\salefinder(cs).exe.config
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Debug\salefinder(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Debug\salefinder(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Debug\salefinder(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Debug\salefinder(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Debug\salefinder(cs).csprojResolveAssemblyReference.cache

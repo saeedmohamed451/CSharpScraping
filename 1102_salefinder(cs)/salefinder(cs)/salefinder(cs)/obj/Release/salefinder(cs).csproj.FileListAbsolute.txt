@@ -1,0 +1,65 @@
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe.config
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).pdb
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Release\itextsharp.dll
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Release\Spire.License.dll
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Release\Spire.Pdf.dll
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).exe
+F:\work\C#  sample\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).pdb
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe.config
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).pdb
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\bin\Release\itextsharp.dll
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Spire.License.dll
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Spire.Pdf.dll
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).exe
+F:\work\C#  sample\shoppingScraper(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).pdb
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe.config
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).pdb
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\itextsharp.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Spire.License.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Spire.Pdf.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).exe
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).pdb
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe.config
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).pdb
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\itextsharp.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Spire.License.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Spire.Pdf.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).exe
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).pdb
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe.config
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).pdb
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\HtmlAgilityPack.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\itextsharp.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Newtonsoft.Json.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Spire.License.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\Spire.Pdf.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\WebDriver.dll
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).csprojResolveAssemblyReference.cache
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).exe
+F:\work\C#  sample\shopping Scraper\Sale\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe.config
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).pdb
+C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).csprojResolveAssemblyReference.cache

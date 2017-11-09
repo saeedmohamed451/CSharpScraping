@@ -210,6 +210,14 @@ namespace countDownScraper_cs_
                     List<ResultHotspot> lHotspotsSort = new List<ResultHotspot>();
                     List<ResultHotspot> rHotspotsSort = new List<ResultHotspot>();
                     List<List<ResultHotspot>> totalspots = new List<List<ResultHotspot>>();
+                    List<ResultHotspot> firstSorts = new List<ResultHotspot>();
+                    List<ResultHotspot> secondSorts = new List<ResultHotspot>();
+                    List<ResultHotspot> thirdSorts = new List<ResultHotspot>();
+                    List<ResultHotspot> forthSorts = new List<ResultHotspot>();
+                    List<ResultHotspot> firstSort1s = new List<ResultHotspot>();
+                    List<ResultHotspot> secondSort1s = new List<ResultHotspot>();
+                    List<ResultHotspot> thirdSort1s = new List<ResultHotspot>();
+                    List<ResultHotspot> forthSort1s = new List<ResultHotspot>();
                     int k = 0;
                     foreach (ResultSpread rSpread in json.spreads)
                     {
@@ -217,8 +225,52 @@ namespace countDownScraper_cs_
                         lHotspotsSort.Clear();
                         if (rSpread.pages.Count == 1)
                         {
-                            lHotspotsSort = rSpread.hotspots.OrderBy(o => o.position.top).ToList();
-                            totalspots.Add(lHotspotsSort);
+                            firstSorts.Clear();
+                            secondSorts.Clear();
+                            thirdSorts.Clear();
+                            forthSorts.Clear();
+                            //lHotspotsSort = rSpread.hotspots.OrderBy(o => o.position.top).ToList();
+                            foreach (ResultHotspot rHotspot in rSpread.hotspots)
+                            {
+                                if (rHotspot.position.top < 0.4)
+                                {
+                                    firstSorts.Add(rHotspot);
+                                }
+                                else if (rHotspot.position.top > 0.4 && rHotspot.position.top < 0.6)
+                                {
+                                    secondSorts.Add(rHotspot);
+                                }
+                                else if (rHotspot.position.top > 0.6 && rHotspot.position.top < 0.8)
+                                {
+                                    thirdSorts.Add(rHotspot);
+                                }
+                                else if (rHotspot.position.top > 0.8)
+                                {
+                                    forthSorts.Add(rHotspot);
+                                }
+
+                            }
+                            firstSorts = firstSorts.OrderBy(o => o.position.left).ToList();
+                            secondSorts = secondSorts.OrderBy(o => o.position.left).ToList();
+                            thirdSorts = thirdSorts.OrderBy(o => o.position.left).ToList();
+                            forthSorts = forthSorts.OrderBy(o => o.position.left).ToList();
+                            for (int i = 0; i < firstSorts.Count; i++)
+                            {
+                                lHotspots.Add(firstSorts[i]);
+                            }
+                            for (int i = 0; i < secondSorts.Count; i++)
+                            {
+                                lHotspots.Add(secondSorts[i]);
+                            }
+                            for (int i = 0; i < thirdSorts.Count; i++)
+                            {
+                                lHotspots.Add(thirdSorts[i]);
+                            }
+                            for (int i = 0; i < forthSorts.Count; i++)
+                            {
+                                lHotspots.Add(forthSorts[i]);
+                            }
+                            totalspots.Add(lHotspots);
                         }
                         else if (rSpread.pages.Count == 2)
                         {
@@ -227,23 +279,105 @@ namespace countDownScraper_cs_
                             rHotspots.Clear();
                             lHotspotsSort.Clear();
                             rHotspotsSort.Clear();
+                            firstSorts.Clear();
+                            firstSort1s.Clear();
+                            secondSorts.Clear();
+                            secondSort1s.Clear();
+                            thirdSort1s.Clear();
+                            forthSort1s.Clear();
+                            thirdSorts.Clear();
+                            forthSorts.Clear();
                             foreach (ResultHotspot rHotspot in rSpread.hotspots)
                             {
                                 if (rHotspot.position.left < 0.5)
                                 {
-                                    lHotspots.Add(rHotspot);
+                                    // lHotspots.Add(rHotspot);
+                                    if (rHotspot.position.top < 0.4)
+                                    {
+                                        firstSorts.Add(rHotspot);
+                                    }
+                                    else if (rHotspot.position.top > 0.4 && rHotspot.position.top < 0.6)
+                                    {
+                                        secondSorts.Add(rHotspot);
+                                    }
+                                    else if (rHotspot.position.top > 0.6 && rHotspot.position.top < 0.8)
+                                    {
+                                        thirdSorts.Add(rHotspot);
+                                    }
+                                    else if (rHotspot.position.top > 0.8)
+                                    {
+                                        forthSorts.Add(rHotspot);
+                                    }
 
                                 }
                                 else
                                 {
-                                    rHotspots.Add(rHotspot);
+                                    // rHotspots.Add(rHotspot);
+                                    if (rHotspot.position.top < 0.4)
+                                    {
+                                        firstSort1s.Add(rHotspot);
+                                    }
+                                    else if (rHotspot.position.top > 0.4 && rHotspot.position.top < 0.6)
+                                    {
+                                        secondSort1s.Add(rHotspot);
+                                    }
+                                    else if (rHotspot.position.top > 0.6 && rHotspot.position.top < 0.8)
+                                    {
+                                        thirdSort1s.Add(rHotspot);
+                                    }
+                                    else if (rHotspot.position.top > 0.8)
+                                    {
+                                        forthSort1s.Add(rHotspot);
+                                    }
                                 }
 
                             }
-                            lHotspotsSort = lHotspots.OrderBy(o => o.position.top).ToList();
-                            rHotspotsSort = rHotspots.OrderBy(o => o.position.top).ToList();
-                            totalspots.Add(lHotspotsSort);
-                            totalspots.Add(rHotspotsSort);
+                            firstSorts = firstSorts.OrderBy(o => o.position.left).ToList();
+                            secondSorts = secondSorts.OrderBy(o => o.position.left).ToList();
+                            thirdSorts = thirdSorts.OrderBy(o => o.position.left).ToList();
+                            forthSorts = forthSorts.OrderBy(o => o.position.left).ToList();
+                            firstSort1s = firstSort1s.OrderBy(o => o.position.left).ToList();
+                            secondSort1s = secondSort1s.OrderBy(o => o.position.left).ToList();
+                            thirdSort1s = thirdSort1s.OrderBy(o => o.position.left).ToList();
+                            forthSort1s = forthSort1s.OrderBy(o => o.position.left).ToList();
+                            //lHotspotsSort = lHotspots.OrderBy(o => o.position.top).ToList();
+                            //rHotspotsSort = rHotspots.OrderBy(o => o.position.top).ToList();
+                            for (int i = 0; i < firstSorts.Count; i++)
+                            {
+                                lHotspots.Add(firstSorts[i]);
+                            }
+                            for (int i = 0; i < secondSorts.Count; i++)
+                            {
+                                lHotspots.Add(secondSorts[i]);
+                            }
+                            for (int i = 0; i < thirdSorts.Count; i++)
+                            {
+                                lHotspots.Add(thirdSorts[i]);
+                            }
+                            for (int i = 0; i < forthSorts.Count; i++)
+                            {
+                                lHotspots.Add(forthSorts[i]);
+                            }
+                            for (int i = 0; i < firstSort1s.Count; i++)
+                            {
+                                rHotspots.Add(firstSort1s[i]);
+                            }
+                            for (int i = 0; i < secondSort1s.Count; i++)
+                            {
+                                rHotspots.Add(secondSort1s[i]);
+                            }
+                            for (int i = 0; i < thirdSort1s.Count; i++)
+                            {
+                                rHotspots.Add(thirdSort1s[i]);
+                            }
+                            for (int i = 0; i < forthSort1s.Count; i++)
+                            {
+                                rHotspots.Add(forthSort1s[i]);
+                            }
+
+
+                            totalspots.Add(lHotspots);
+                            totalspots.Add(rHotspots);
                         }
                         for (int kk = 0; kk < totalspots.Count; kk++)
                         {

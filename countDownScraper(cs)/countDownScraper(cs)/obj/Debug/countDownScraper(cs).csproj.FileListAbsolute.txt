@@ -10,3 +10,9 @@ C:\Users\Webdev\Documents\Repos\scrapingsalefinder\countDownScraper(cs)\countDow
 C:\Users\Webdev\Documents\Repos\scrapingsalefinder\countDownScraper(cs)\countDownScraper(cs)\bin\Debug\countDownScraper(cs).exe
 C:\Users\Webdev\Documents\Repos\scrapingsalefinder\countDownScraper(cs)\countDownScraper(cs)\bin\Debug\countDownScraper(cs).pdb
 C:\Users\Webdev\Documents\Repos\scrapingsalefinder\countDownScraper(cs)\countDownScraper(cs)\obj\Debug\countDownScraper(cs).csprojResolveAssemblyReference.cache
+C:\Users\gallant\CSharpScraping\countDownScraper(cs)\countDownScraper(cs)\bin\Debug\countDownScraper(cs).exe.config
+C:\Users\gallant\CSharpScraping\countDownScraper(cs)\countDownScraper(cs)\bin\Debug\countDownScraper(cs).exe
+C:\Users\gallant\CSharpScraping\countDownScraper(cs)\countDownScraper(cs)\bin\Debug\countDownScraper(cs).pdb
+C:\Users\gallant\CSharpScraping\countDownScraper(cs)\countDownScraper(cs)\obj\Debug\countDownScraper(cs).csprojResolveAssemblyReference.cache
+C:\Users\gallant\CSharpScraping\countDownScraper(cs)\countDownScraper(cs)\obj\Debug\countDownScraper(cs).exe
+C:\Users\gallant\CSharpScraping\countDownScraper(cs)\countDownScraper(cs)\obj\Debug\countDownScraper(cs).pdb

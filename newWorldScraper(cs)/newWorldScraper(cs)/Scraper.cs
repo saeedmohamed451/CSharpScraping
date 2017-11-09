@@ -376,6 +376,10 @@ namespace newWorldScraper_cs_
                                 log("38");
 
                                 item_name = filterDescription(item_name);
+                                if (item_name.Contains(",")) 
+                                {
+                                    item_name = "\"" + item_name + "\"";
+                                }
                                 ppname = item_name;
                                 log("51");
                                 item_name = item_name.Trim();

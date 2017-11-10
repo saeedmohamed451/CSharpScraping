@@ -196,8 +196,8 @@ namespace countDownScraper_cs_
                         d1 = "0" + d1;
                     }
 
-                    product_start = d + "/" + m + "/" + strArray3[2];
-                    product_end = d1 + "/" + m1 + "/" + strArray4[2];
+                    product_start = m + "/" + d + "/" + strArray3[2];
+                    product_end = m1 + "/" + d1 + "/" + strArray4[2];
                     FileWriter writer1 = new FileWriter("error.txt");
 
 

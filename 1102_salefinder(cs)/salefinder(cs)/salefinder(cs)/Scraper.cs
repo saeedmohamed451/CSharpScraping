@@ -254,6 +254,7 @@ namespace salefinder_cs_
                         json_content = regStr(json_content, "\"page\":", "\"pagg\":");
                         json_content = regStr(json_content, "re\"view\"", "review");
                         json_content = regStr(json_content, "Re\"view\"", "Review");
+                        json_content = regStr(json_content, "\"saleId\"=", "saleId=");
                         if (json_content.Contains("\"page\""))
                         {
                             json_content = regStr(json_content, "\"page\"", "\\\"page\\\"");

@@ -69,3 +69,9 @@ E:\_GIT\CSharpScraping\CSharpScraping\CSharpScraping\1102_salefinder(cs)\salefin
 E:\_GIT\CSharpScraping\CSharpScraping\CSharpScraping\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe
 E:\_GIT\CSharpScraping\CSharpScraping\CSharpScraping\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).pdb
 E:\_GIT\CSharpScraping\CSharpScraping\CSharpScraping\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).csprojResolveAssemblyReference.cache
+C:\Users\gallant\CSharpScraping\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe.config
+C:\Users\gallant\CSharpScraping\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).exe
+C:\Users\gallant\CSharpScraping\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\bin\Release\salefinder(cs).pdb
+C:\Users\gallant\CSharpScraping\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).csprojResolveAssemblyReference.cache
+C:\Users\gallant\CSharpScraping\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).exe
+C:\Users\gallant\CSharpScraping\1102_salefinder(cs)\salefinder(cs)\salefinder(cs)\obj\Release\salefinder(cs).pdb

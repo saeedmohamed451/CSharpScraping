@@ -499,6 +499,8 @@ namespace newWorldScraper_cs_
                                         product_regpirce = product_regpirce.Replace("ea", "");
                                         product_regpirce = product_regpirce.Replace("each", "");
                                         product_regpirce = product_regpirce.Replace("EACH", "");
+                                        product_regpirce = product_regpirce.Replace("¢", "");
+                                        product_regpirce = product_regpirce.Replace("c", "");
                                         if (product_regpirce.Contains("%"))
                                         {
                                             log("77");

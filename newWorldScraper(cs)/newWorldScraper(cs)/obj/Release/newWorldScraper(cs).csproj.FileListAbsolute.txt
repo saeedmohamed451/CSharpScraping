@@ -7,6 +7,5 @@ E:\_GIT\CSharpScraping\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\ob
 C:\Users\gallant\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\bin\Release\newWorldScraper(cs).exe.config
 C:\Users\gallant\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\bin\Release\newWorldScraper(cs).exe
 C:\Users\gallant\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\bin\Release\newWorldScraper(cs).pdb
-C:\Users\gallant\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\obj\Release\newWorldScraper(cs).csprojResolveAssemblyReference.cache
 C:\Users\gallant\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\obj\Release\newWorldScraper(cs).exe
 C:\Users\gallant\CSharpScraping\newWorldScraper(cs)\newWorldScraper(cs)\obj\Release\newWorldScraper(cs).pdb

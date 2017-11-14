@@ -925,6 +925,8 @@ namespace lasooScraper_cs_
             filteredItemName = filteredItemName.Replace("Two for $", "2 for $");
             filteredItemName = filteredItemName.Replace("Three for $", "3 for $");
             filteredItemName = filteredItemName.Replace("Four for $", "4 for $");
+            filteredItemName = filteredItemName.Replace("nu2019", "'");
+
 
             return filteredItemName;
         }

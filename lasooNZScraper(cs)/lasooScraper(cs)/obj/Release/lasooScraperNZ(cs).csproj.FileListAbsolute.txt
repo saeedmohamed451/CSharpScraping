@@ -1,0 +1,6 @@
+C:\Users\gallant\CSharpScraping\lasooNZScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraperNZ(cs).exe.config
+C:\Users\gallant\CSharpScraping\lasooNZScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraperNZ(cs).exe
+C:\Users\gallant\CSharpScraping\lasooNZScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraperNZ(cs).pdb
+C:\Users\gallant\CSharpScraping\lasooNZScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraperNZ(cs).csprojResolveAssemblyReference.cache
+C:\Users\gallant\CSharpScraping\lasooNZScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraperNZ(cs).exe
+C:\Users\gallant\CSharpScraping\lasooNZScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraperNZ(cs).pdb

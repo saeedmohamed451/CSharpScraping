@@ -294,8 +294,8 @@ namespace lasooScraper_cs_
                     }
                     //string first_month = get_month(str_start[1]);
                     //string second_month = get_month(str_end[1]);
-                    product_start = str_start[0] + "/" + str_start[1] + "/" + str_start[2];
-                    product_end = str_end[0] + "/" + str_end[1] + "/" + str_end[2];
+                    product_start = str_start[2] + "/" + str_start[1] + "/" + str_start[0];
+                    product_end = str_end[2] + "/" + str_end[1] + "/" + str_end[0];
                     start_Date = str_start[0] + "_" + str_start[1] + "_" + str_start[2];
                     //
                     page_array.Clear();

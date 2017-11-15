@@ -28,3 +28,9 @@ C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooSc
 C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).exe
 C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).pdb
 C:\Users\Webdev\Documents\Repos\scrapingsalefinder\1031_lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs)AU.exe.config
+C:\Users\gallant\CSharpScraping\1031_lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs)AU.exe.config
+C:\Users\gallant\CSharpScraping\1031_lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs)AU.exe
+C:\Users\gallant\CSharpScraping\1031_lasooScraper(cs)\lasooScraper(cs)\bin\Release\lasooScraper(cs)AU.pdb
+C:\Users\gallant\CSharpScraping\1031_lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs).csprojResolveAssemblyReference.cache
+C:\Users\gallant\CSharpScraping\1031_lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs)AU.exe
+C:\Users\gallant\CSharpScraping\1031_lasooScraper(cs)\lasooScraper(cs)\obj\Release\lasooScraper(cs)AU.pdb

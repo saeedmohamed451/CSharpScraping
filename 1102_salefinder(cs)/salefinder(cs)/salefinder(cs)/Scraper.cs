@@ -580,6 +580,10 @@ namespace salefinder_cs_
                                             promo_type = "Price Reduction";
                                         }
                                     }
+                                    if (product_des.Contains("% off"))
+                                    {
+                                        promo_type = "% Off";
+                                    }
                                     /*  if(j == 1)
                                       {
                                           string row = started_date + ',' + ended_date + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;

@@ -697,7 +697,7 @@ namespace lasooScraper_cs_
                             {
                                 if (promo_type != "New Line")
                                 {
-                                    //promo_type = "Half Price";
+                                    promo_type = "Half Price";
 
                                 }
 
@@ -755,7 +755,7 @@ namespace lasooScraper_cs_
                             }
                             else
                             {
-                                row = product_start + ',' + product_end + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + product_disprice + ',' + product_regpirce;
+                                row = product_start + ',' + product_end + ',' + retailer + ',' + product_des + ',' + page + ',' + promo_type + ',' + multibuy_Qty + ',' + dis_price.ToString() + ',' + reg_price.ToString();
 
 
                             }

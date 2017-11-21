@@ -37,3 +37,6 @@ E:\_GIT\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Relea
 E:\_GIT\CSharpScraping\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).exe.config
 E:\_GIT\CSharpScraping\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).exe
 E:\_GIT\CSharpScraping\CSharpScraping\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).pdb
+C:\Users\gallant\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\bin\Release\ColeScraper(cs).exe.config
+C:\Users\gallant\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).exe
+C:\Users\gallant\CSharpScraping\1102_ColeScraper\ColeScraper(cs)\obj\Release\ColeScraper(cs).pdb

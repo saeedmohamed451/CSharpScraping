@@ -25,7 +25,7 @@ namespace lasooScraper_cs_
 
                 Scraper scraper = new Scraper();
                 string root_dir = scraper.createRootDirectory(args[5], args[3]);
-
+                // bool flag = scraper.lasooScrape("Drakes QLD", root_dir, "http://www.lasoo.com.au/retailer/drakes-supermarkets.html", "4053", "DrakesQLD_YYYY_MM_DD");
                 bool flag = scraper.lasooScrape(args[0], root_dir, args[1], args[4], args[2]);
 
                 if (flag == true)
